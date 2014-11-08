@@ -1,0 +1,741 @@
+ html,body {
+    width: 100%;
+    height: 100%;
+}
+.topNavigation .topNavlistModule{
+	margin-top: 0;
+}
+.mainViewArea{
+	position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    visibility: hidden;
+}
+.mainViewArea .logoText{
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	width: 258px;
+	height: 43px;
+	margin-left: -129px;
+	background: url(../images/index_logoText2.png) no-repeat center center;
+}
+.navGroupPanel{
+	position:absolute;
+	top:100px;
+	left:0;
+	width: 100%;
+	background-color: #363434;
+}
+.navGroupPanel .viewBlock{
+	position:absolute;
+	top: 9px;
+	left:0;
+	overflow: hidden;
+}
+.navGroupPanel .placeholderBG{
+	width: 100%;
+}
+.navGroupPanel ul{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+.navGroupPanel ul li{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+.navGroupPanel ul li .navImg{
+	width: 100%;
+}
+.navGroupPanel ul li .cover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:20.05%;
+	z-index: 10;
+	cursor: pointer;
+}
+.navGroupPanel ul li a{
+	position: absolute;
+	display: block;
+	background-color: 0;
+	opacity: 0;
+}
+.navGroupPanel ul .blockA {
+	z-index: 1;
+}
+.navGroupPanel ul .blockB {
+	z-index: 2;
+}
+.navGroupPanel ul .blockC {
+	z-index: 3;
+}
+.navGroupPanel ul .blockD {
+	z-index: 4;
+}
+.navGroupPanel ul .blockE {
+	z-index: 5;
+}
+.navGroupPanel ul .blockA .block01{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:30.05%;
+	height:100%;
+}
+.navGroupPanel ul .blockA .block02{
+	position: absolute;
+	top: 1.61%;
+	left: 30.91%;
+	width:18.04%;
+	height:46.7%;
+}
+.navGroupPanel ul .blockA .block03{
+	position: absolute;
+	top: 49.43%;
+	left: 30.91%;
+	width:18.04%;
+	height:21.74%;	
+}
+.navGroupPanel ul .blockA .block04{
+	position: absolute;
+	top: 72.78%;
+	left: 30.91%;
+	width:18.04%;
+	height:25.6%;
+}
+.navGroupPanel ul .blockA .block05{
+	position: absolute;
+	top: 1.61%;
+	left: 49.54%;
+	width:18.04%;
+	height:46.7%;	
+}
+.navGroupPanel ul .blockA .block06{
+	position: absolute;
+	top: 49.43%;
+	left: 49.54%;
+	width:30.74%;
+	height:48.95%;	
+}
+.navGroupPanel ul .blockA .block07{
+	position: absolute;
+	top: 1.61%;
+	right: 19.71%;
+	width:12.11%;
+	height:26.24%;	
+}
+.navGroupPanel ul .blockA .block08{
+	position: absolute;
+	top: 28.98%;
+	right: 19.71%;
+	width:12.11%;
+	height:19.32%;	
+}
+.navGroupPanel ul .blockA .block09{
+	position: absolute;
+	top: 1.61%;
+	right: 0.83%;
+	width:18.29%;
+	height:26.41%;	
+}
+.navGroupPanel ul .blockA .block10{
+	position: absolute;
+	top: 28.98%;
+	right: 0.83%;
+	width:18.29%;
+	height:43.8%;	
+}
+.navGroupPanel ul .blockA .block11{
+	position: absolute;
+	top: 73.91%;
+	right: 0.83%;
+	width:18.29%;
+	height:24.47%;	
+}
+.navGroupPanel ul .blockB .block01{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:30.05%;
+	height:100%;
+}
+.navGroupPanel ul .blockB .block02{
+	position: absolute;
+	top: 1.61%;
+	left: 30.82%;
+	width:18.29%;
+	height:26.24%;
+}
+.navGroupPanel ul .blockB .block03{
+	position: absolute;
+	top: 28.98%;
+	left: 30.82%;
+	width:18.29%;
+	height:43.8%;
+}
+.navGroupPanel ul .blockB .block04{
+	position: absolute;
+	top: 73.91%;
+	left: 30.82%;
+	width:18.29%;
+	height:24.47%;	
+}
+.navGroupPanel ul .blockB .block05{
+	position: absolute;
+	top: 1.61%;
+	left: 49.7%;
+	width:12.11%;
+	height:26.24%;	
+}
+.navGroupPanel ul .blockB .block06{
+	position: absolute;
+	top: 28.98%;
+	left: 49.7%;
+	width:12.11%;
+	height:19.32%;	
+}
+.navGroupPanel ul .blockB .block07{
+	position: absolute;
+	top: 49.43%;
+	left: 49.7%;
+	width:12.11%;
+	height:48.95%;	
+}
+.navGroupPanel ul .blockB .block08{
+	position: absolute;
+	top: 1.61%;
+	right: 19.54%;
+	width:18.04%;
+	height:46.7%;
+}
+.navGroupPanel ul .blockB .block09{
+	position: absolute;
+	top: 49.43%;
+	right: 19.54%;
+	width:18.04%;
+	height:48.95%;	
+}
+.navGroupPanel ul .blockB .block10{
+	position: absolute;
+	top: 1.61%;
+	right: 0.83%;
+	width:18.12%;
+	height:46.7%;
+}
+.navGroupPanel ul .blockB .block11{
+	position: absolute;
+	top: 49.43%;
+	right: 0.83%;
+	width:18.12%;
+	height:22.22%;	
+}
+.navGroupPanel ul .blockB .block12{
+	position: absolute;
+	top: 72.78%;
+	right: 0.83%;
+	width:18.12%;
+	height:25.6%;
+}
+.navGroupPanel ul .blockC .block01{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:30.05%;
+	height:100%;	
+}
+.navGroupPanel ul .blockC .block02{
+	position: absolute;
+	top: 1.61%;
+	left: 30.9%;
+	width:18.13%;
+	height:25.6%;
+}
+.navGroupPanel ul .blockC .block03{
+	position: absolute;
+	top: 28.34%;
+	left: 30.9%;
+	width:18.13%;
+	height:22.22%;	
+}
+.navGroupPanel ul .blockC .block04{
+	position: absolute;
+	top: 51.69%;
+	left: 30.9%;
+	width:18.13%;
+	height:46.8%;	
+}
+.navGroupPanel ul .blockC .block05{
+	position: absolute;
+	top: 1.61%;
+	left: 49.62%;
+	width:18.04%;
+	height:48.95%;
+}
+.navGroupPanel ul .blockC .block06{
+	position: absolute;
+	top: 51.69%;
+	left: 49.62%;
+	width:18.04%;
+	height:46.8%;	
+}
+.navGroupPanel ul .blockC .block07{
+	position: absolute;
+	top: 1.61%;
+	right: 19.63%;
+	width:12.11%;
+	height:48.95%;	
+}
+.navGroupPanel ul .blockC .block08{
+	position: absolute;
+	top: 51.69%;
+	right: 19.63%;
+	width:12.11%;
+	height:19.32%;
+}
+.navGroupPanel ul .blockC .block09{
+	position: absolute;
+	top: 72.14%;
+	right: 19.63%;
+	width:12.11%;
+	height:26.34%;	
+}
+.navGroupPanel ul .blockC .block10{
+	position: absolute;
+	top: 1.61%;
+	right: 0.75%;
+	width:18.29%;
+	height:24.47%;
+}
+.navGroupPanel ul .blockC .block11{
+	position: absolute;
+	top: 27.21%;
+	right: 0.75%;
+	width:18.29%;
+	height:43.8%;	
+}
+.navGroupPanel ul .blockC .block12{
+	position: absolute;
+	top: 72.14%;
+	right: 0.75%;
+	width:18.29%;
+	height:26.34%;	
+}
+.navGroupPanel ul .blockD .block01{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:30.05%;
+	height:100%;
+}
+.navGroupPanel ul .blockD .block02{
+	position: absolute;
+	top: 1.61%;
+	left: 30.82%;
+	width:18.29%;
+	height:24.47%;
+}
+.navGroupPanel ul .blockD .block03{
+	position: absolute;
+	top: 27.21%;
+	left: 30.82%;
+	width:18.29%;
+	height:43.8%;	
+}
+.navGroupPanel ul .blockD .block04{
+	position: absolute;
+	top: 72.14%;
+	left: 30.82%;
+	width:18.29%;
+	height:26.24%;	
+}
+.navGroupPanel ul .blockD .block05{
+	position: absolute;
+	top: 1.61%;
+	left: 49.7%;
+	width:12.11%;
+	height:48.95%;
+}
+.navGroupPanel ul .blockD .block06{
+	position: absolute;
+	top: 51.69%;
+	left: 49.7%;
+	width:12.11%;
+	height:19.32%;	
+}
+.navGroupPanel ul .blockD .block07{
+	position: absolute;
+	top: 72.14%;
+	left: 49.7%;
+	width:12.11%;
+	height:26.24%;
+}
+.navGroupPanel ul .blockD .block08{
+	position: absolute;
+	top: 1.61%;
+	right: 19.54%;
+	width:18.04%;
+	height:48.95%;
+}
+.navGroupPanel ul .blockD .block09{
+	position: absolute;
+	top: 51.69%;
+	right: 19.54%;
+	width:18.04%;
+	height:46.69%;	
+}
+.navGroupPanel ul .blockD .block10{
+	position: absolute;
+	top: 1.61%;
+	right: 0.83%;
+	width:18.12%;
+	height:25.6%;	
+}
+.navGroupPanel ul .blockD .block11{
+	position: absolute;
+	top: 28.34%;
+	right: 0.83%;
+	width:18.12%;
+	height:22.22%;	
+}
+.navGroupPanel ul .blockD .block12{
+	position: absolute;
+	top: 51.69%;
+	right: 0.83%;
+	width:18.12%;
+	height:46.7%;	
+}
+.navGroupPanel ul .blockE .block01{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:30.05%;
+	height:100%;
+}
+.navGroupPanel ul .blockE .block02{
+	position: absolute;
+	top: 1.61%;
+	left: 30.99%;
+	width:18.04%;
+	height:46.7%;	
+}
+.navGroupPanel ul .blockE .block03{
+	position: absolute;
+	top: 49.43%;
+	left: 30.99%;
+	width:18.04%;
+	height:22.22%;	
+}
+.navGroupPanel ul .blockE .block04{
+	position: absolute;
+	top: 72.78%;
+	left: 30.99%;
+	width:18.04%;
+	height:25.60%;	
+}
+
+.navGroupPanel ul .blockE .block05{
+	position: absolute;
+	top: 1.61%;
+	left: 49.62%;
+	width:12.11%;
+	height:26.24%;	
+}
+.navGroupPanel ul .blockE .block06{
+	position: absolute;
+	top: 28.98%;
+	left: 49.62%;
+	width:12.11%;
+	height:19.32%;
+}
+.navGroupPanel ul .blockE .block07{
+	position: absolute;
+	top: 49.43%;
+	left: 49.62%;
+	width:18.04%;
+	height:48.95%;
+}
+
+.navGroupPanel ul .blockE .block08{
+	position: absolute;
+	top: 1.61%;
+	right: 19.63%;
+	width:18.04%;
+	height:46.69%;
+}
+.navGroupPanel ul .blockE .block09{
+	position: absolute;
+	top: 49.43%;
+	right: 19.63%;
+	width:12.11%;
+	height:48.95%;
+}
+
+.navGroupPanel ul .blockE .block10{
+	position: absolute;
+	top: 1.61%;
+	right: 0.75%;
+	width:18.29%;
+	height:26.24%;	
+}
+.navGroupPanel ul .blockE .block11{
+	position: absolute;
+	top: 28.98%;
+	right: 0.75%;
+	width:18.29%;
+	height:43.8%;	
+}
+.navGroupPanel ul .blockE .block12{
+	position: absolute;
+	top: 73.91%;
+	right: 0.75%;
+	width:18.29%;
+	height:24.47%;
+}
+
+.mainViewArea .contentBlock{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right:0;
+	display: none;
+}
+.mainViewArea .contentBlock .centerBlock{
+	position:relative;
+}
+.mainViewArea .contentBlock .bottomContent{
+	position: relative;
+}
+
+.mainViewArea .contentBlock .contentMiddleBlock{
+	position: absolute;
+	left:0;
+	right:0;
+	height: 314px;
+	top: 50%;
+	margin-top:-175px;
+	background:rgba(18,18,18,0.3);
+    text-align: center;
+    display: none;
+       
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c121212, endColorstr=#4c121212)\0;
+
+}
+.mainViewArea .contentBlock .contentMiddleBlock a{
+	position:relative;
+	display: inline-block;
+	width:425px;
+	height:295px;
+	margin-left: 50px;
+	background:url(../images/1pAlpha.png)\0;
+	
+	z-index: 102\0;	
+}
+.mainViewArea .contentBlock .contentMiddleBlock a:first-child{
+	margin-left: 0;
+}
+.mainViewArea .contentBlock .contentMiddleBlock a img{
+	position:absolute;
+	left:0;
+	top:0;
+	opacity: 0;
+	transition: all 1s ease-out 0s;
+	
+	filter: alpha(opacity=0)\0;
+}
+
+.mainViewArea .scrollBar{
+	position:absolute;
+	overflow:hidden;
+	width: 7px;
+	top:8px;
+	right: 0;
+}
+.mainViewArea .scrollBar .thumb{
+	position:absolute;
+	top:0;
+	left:0;
+	width:7px;
+	background-color: #ccc;	
+}
+
+.mainViewArea .bottomPanelA{
+	position:relative;
+	height:100px;
+	width:1000px;
+	margin: 0 auto;
+}
+.mainViewArea .bottomPanelA .navigationGroup{
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	display: inline-block;
+}
+.mainViewArea .bottomPanelA .navigationGroup a{
+	display: inline-block;
+	margin-right: 15px;
+}
+.mainViewArea .bottomPanelA .copyright{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	font-size: 15px;
+}
+.mainViewArea .bottomPanelA .shareGroup{
+	position: absolute;
+	right: 0;
+	bottom: 50px;	
+}
+.mainViewArea .bottomPanelA .shareGroup a{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	width: 32px;
+	height: 32px;
+	margin-left: 20px;
+	background:url(../images/icons.png) no-repeat;
+}
+.mainViewArea .bottomPanelA .shareGroup .icon01{
+	background-position: 0 -24px;
+}
+.mainViewArea .bottomPanelA .shareGroup .icon02{
+	background-position: -32px -24px;
+}
+.mainViewArea .bottomPanelA .shareGroup .icon03{
+	background-position: -64px -24px;
+}
+.mainViewArea .bottomPanelA .shareGroup .icon04{
+	background-position: 0 -56px;
+}
+.mainViewArea .bottomPanelA .shareGroup .icon05{
+	background-position: -32px -56px;
+}
+
+.phoneViewArea{
+	display: none;
+	position: relative;
+}
+
+.phoneViewArea .logoBlock{
+	position: relative;
+}
+.phoneViewArea .logoGraphic{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:288px;
+	height:234px;
+	margin-left:-144px;
+	margin-top:-187px;
+	display: block;
+	overflow: hidden;
+	background: url(../images/index_logoGraphic.png) no-repeat 0 0;
+}
+.phoneViewArea .logoText{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 312px;
+	height: 48px;
+	margin-left: -150px;
+	margin-top: 54px;
+	background: url(../images/index_logoText.png) no-repeat center center;
+}
+
+
+@media only screen and (min-width: 785px) and (max-width: 1000px) {
+	.mainViewArea .centerBlock{
+		width: 100%;	
+	}
+	.mainViewArea .bottomPanelA{
+		width: 100%;
+	}
+	.topNavigation .topNavlistModule>li {
+	    width: 14.2%;
+	    max-width: 142px;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.mainViewArea .bottomPanelA .navigationGroup{
+		width: 360px;
+	}
+	.mainViewArea .bottomPanelA .navigationGroup a {
+		width: 180px;
+		margin-right: 0;
+	}
+	.mainViewArea .bottomPanelA .navigationGroup {
+		left: 10px;
+	}
+	.mainViewArea .bottomPanelA .shareGroup {
+		right: 10px;
+	}
+	.mainViewArea .bottomPanelA .copyright {
+		right: 10px;
+	}
+	
+}
+
+@media only screen and (max-width: 900px) {
+	.mainViewArea .contentBlock .contentMiddleBlock a {
+		width: 340px;
+		height: 235px;
+	}
+	.mainViewArea .contentBlock .contentMiddleBlock a img{
+		width: 340px;
+		height: 235px;
+	}
+}
+@media only screen and (max-width: 784px) {
+	 html,body {
+	    width: auto;
+	    height: auto;
+	}
+	.mainViewArea .centerBlock{
+  		width: 100%;	
+  	}
+  	.mainViewArea .bottomPanelA{
+		width: 100%;
+	}
+	.mainViewArea{
+		display: none;
+	}
+	.phoneViewArea{
+		display: block;
+	}
+	
+	.topNavigation .topNavlistModule li{
+		width: 100%;
+	}
+	
+	.phoneViewArea .logoGraphic {
+		background: url("../images/phone/index_logoGraphic.png");
+	    display: block;
+	    height: 171px;
+	    left: 50%;
+	    margin-left: -105px;
+	    margin-top: -157px;
+	    overflow: hidden;
+	    position: absolute;
+	    top: 50%;
+	    width: 210px;
+	}
+	.phoneViewArea .logoText {
+	    background: url("../images/phone/index_logoText.png");
+	    height: 35px;
+	    left: 50%;
+	    margin-left: -113px;
+	    margin-top: 30px;
+	    position: absolute;
+	    top: 50%;
+	    width: 227px;
+	}
+	
+	
+}

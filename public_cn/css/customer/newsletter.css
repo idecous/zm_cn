@@ -1,0 +1,5 @@
+.m7p_formList li label{
+	float: none;
+	display: inline-block;
+	margin-left: 4px;
+}

@@ -1,0 +1,30 @@
+table{
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #ddd;
+	border-collapse:collapse;
+}
+table thead tr{
+	height: 38px;
+	line-height: 38px;
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #ddd;
+}
+table thead tr th{
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+}
+table tbody td{
+	text-align: center;
+	padding: 2px 2px 10px 2px;
+	line-height: 26px;
+	font-size: 12px;
+	border-bottom: 1px solid #ddd;
+}
+table tbody a{
+	display: block;
+}
+table tbody .textLeft{
+	padding-left: 10px;
+}

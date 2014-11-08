@@ -1,0 +1,148 @@
+.orderBlock{
+	overflow: hidden;
+}
+.orderBlock h3{
+	font-size: 14px;
+	margin-right:20px;
+	line-height: 30px;
+	font-weight: bold;
+}
+.orderBlock p{
+	font-size: 12px;
+	margin-right:20px; 
+	padding-bottom: 20px;
+} 
+.orderBlock .right h3{
+	margin-left: 20px;
+}
+.orderBlock .right p{
+	margin-left: 20px;
+	line-height: 20px;
+}
+.orderBlock .half{
+	width: 50%;
+	float: left;
+}
+table{
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #ddd;
+	border-collapse:collapse;
+}
+table thead tr{
+	height: 38px;
+	line-height: 38px;
+	background-color: #f1f1f1;
+	padding: 0 4px;
+}
+table tbody td{
+	text-align: center;
+	padding: 10px 2px;
+	line-height: 26px;
+	font-size: 12px;
+}
+
+table .alignLeft{
+	text-align: left;
+	padding: 0 10px;
+}
+.totalRow{
+	line-height: 50px;
+}
+.totalRow .again{
+	height: 30px;
+	line-height:30px;
+	width: 100px;
+	float: right;
+	margin-top: 15px;
+	text-align: center;
+}
+.totalRow span{
+	margin-left: 20px;
+	font-size: 12px;
+}
+.totalRow .total{
+	font-size: 16px;
+}
+
+.mobileBlock{
+	display: none;
+	font-size: 12px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+.mobileBlock ul li {
+	border: 1px solid #ddd;
+	margin: 0 10px 10px 10px;
+}
+.mobileBlock ul li .paramRow{
+	position: relative;
+}
+.mobileBlock ul li .paramRow img{
+	position:absolute;
+	top: 10px;
+	left: 10px;
+}
+.mobileBlock ul li .paramRow .paramCol{
+	margin: 0 10px 0 120px;
+	padding: 10px 10px;
+	height:145px;
+	line-height: 24px;
+}
+.mobileBlock ul li .paramRow .paramCol h1{
+	font-size: 14px;
+	margin-top: 20px;
+}
+.mobileBlock ul li .NoRow{
+	height: 30px;
+	line-height:30px;
+	padding: 0 10px;
+	background-color: #eee;
+}
+
+
+@media only screen and (max-width: 785px) {
+	table{
+		display: none;	
+	}
+	.mobileBlock{
+		display: block;
+	}
+	
+	.orderBlock .half {
+		float: none;
+		width: auto;
+	}
+	.orderBlock p,
+	.orderBlock .right p{
+		margin: 10px 10px 0 10px;
+	}
+	
+	.orderBlock h3,
+	.orderBlock .right h3{
+		margin: 0;
+		padding: 0 10px;
+	}
+
+	.orderBlock h3{
+		text-align: center;
+		font-size: 14px;
+		line-height: 40px;
+		border-bottom: 1px solid #ddd;
+		
+	}
+	.totalRow{
+		margin: 0 10px;
+		text-align: right;
+	}
+	.totalRow span{
+		white-space: nowrap;
+	}
+	.totalRow .again{
+		display: block;
+		float: none;
+		width: 100%;
+	}
+}
+
+

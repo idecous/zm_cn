@@ -1,0 +1,808 @@
+.popSizeWindow{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 500;
+	background-color: rgba(0,0,0,0.6);
+	visibility: hidden;
+	
+	background:url(../images/1pAlpha.png)\0;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)\0;
+}
+.popSizeWindow .viewBlock{
+	position: absolute;
+}
+.popSizeWindow .viewBlock img{
+	width: 100%;
+}
+.popSizeWindow .viewBlock a{
+	display: block;
+	width: 31px;
+	height: 31px;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	background:url(../images/icons.png) no-repeat -65px -58px;		
+}
+
+.mainPanel .navGroup{
+	line-height: 70px;
+	height: 70px;
+	font-size: 14px;
+}
+.mainPanel .navGroup span{
+	color: #939598;
+}
+.mainPreviewBlock{
+	position:relative;
+	float: left;
+	width: 59%;
+	background-color: #B7B7B7;
+	overflow: hidden;
+}
+.mainPreviewBlock .placeholderBG{
+	width: 100%;
+}
+.mainPreviewBlock .imgContainer{
+	position:absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+}
+.mainPreviewBlock .imgContainer img{
+	position:absolute;
+	left:0;
+	right:0;
+	width: 100%;
+	display: none;
+}
+.mainPreviewBlock .whitehMask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(255,255,255,0.5);
+	z-index: 5;
+	display: none;
+	
+	background:url(../images/1pAlpha.png)\0;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7AFFFFFF, endColorstr=#7AFFFFFF)\0;
+}
+.mainPreviewBlock .viewArea{
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #fff;
+	overflow: hidden;
+	display: none;
+	z-index: 6;
+}
+.mainPreviewBlock .viewArea img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mainPreviewBlock .mouseArea{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index: 7;
+	background: url(../images/1pAlpha.png);
+}
+ .mainPreviewBlock .listGroup{
+	position:absolute;
+	left:0;
+	bottom: -220px;
+	width: 100%;
+	height: 220px;
+	background:rgba(0,0,0,0.5);
+    z-index: 8;
+    
+    background:url(../images/1pAlpha.png)\0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000)\0;
+}
+ .mainPreviewBlock .listGroup .listContainer{
+	position: absolute;
+	top: 9px;
+	left: 15px;
+	right: 15px;
+	bottom: 9px;
+	overflow: hidden;
+}
+.mainPreviewBlock .listGroup .arrow{
+	position:absolute;
+	top:50%;	
+	width: 15px;
+	height: 100%;
+	background: url(../images/details_preview_arrows.png);
+	margin-top: -110px;
+}
+.mainPreviewBlock .listGroup .leftArrow{
+	left: 0;
+	background-position: 0 0;
+}
+.mainPreviewBlock .listGroup .rightArrow{
+	right: 0;
+	background-position: -15px 0;
+}
+.mainPreviewBlock .listContainer ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.mainPreviewBlock .listContainer ul li{
+	position:relative;
+	float:left;
+	width: 135px;
+	height:198px;
+	border:1px solid #908986;
+	overflow: hidden;
+}
+.mainPreviewBlock .listContainer ul li a img{
+	width: 100%;
+}
+.mainPreviewBlock .listContainer ul li.checked{
+	border:1px solid #000;
+}
+.mainPreviewBlock .listContainer ul li a i{
+	position:absolute;
+	left:50%;
+	top:50%;
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	margin-top: -25px;
+	background: url(../images/playerBtn01.png);
+}
+.mainPreviewBlock .showMore{
+	position:absolute;
+	bottom:0;
+	left:0;
+	line-height:38px;
+	width: 100%;
+	height: 38px;
+	color:#fff;
+	font-size:14px;
+	background:rgba(0,0,0,0.5);
+    z-index: 9;	
+    
+    background:url(../images/1pAlpha.png)\0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000)\0;
+}
+.mainPreviewBlock .showMore span{
+	padding-left:10px;
+}
+
+.mainPreviewBlock .phoneNavBlock{
+	position:absolute;
+	height: 20px;
+	line-height: 20px;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+	display: none;
+}
+.mainPreviewBlock .phoneNavBlock a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/phone/details_nav.png);
+	margin-left: 10px;
+	background-position: -20px 0;
+}
+.mainPreviewBlock .phoneNavBlock a:first-child{
+	margin-left: 0;
+}
+.mainPreviewBlock .phoneNavBlock a.selected{
+	background-position: 0 0;
+}
+
+.mainParamBlock{
+	position:relative;
+	float:left;
+	width: 41%;	
+	min-height: 385px;
+	text-align: center;
+}
+.mainParamBlock .partViewPosUtility{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+}
+.mainParamBlock .partViewPosUtility .partViewBorder{
+	position:relative;
+	width: 93.9%;
+	display: none;
+	margin: 0 auto;
+}
+.mainParamBlock .partViewPosUtility .partViewBorder .placeholderBG{
+	width: 100%;
+}
+.mainParamBlock .partViewBlock{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;	
+}
+.mainParamBlock .partViewBlock img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mainParamBlock h1{
+	font-family: 'times';
+	line-height: 40px;
+	font-size: 24px;
+	font-weight: normal;
+	padding: 0 10px;
+}
+.mainParamBlock .goodsNumber{
+	color: #666;
+	line-height: 60px;
+	height: 60px;
+}
+.mainParamBlock .price{
+	font-family: 'sabon';
+	font-size: 20px;
+	color: #cc0000;
+	line-height: 60px;
+	height: 60px;
+}
+.mainParamBlock h2{
+	font-weight: normal;
+	font-size: 16px;
+}
+.mainParamBlock p{
+	margin: 10px auto 0 auto;
+	width: 305px;
+	line-height: 20px;
+	color: #666;
+	text-justify: distribute;
+}
+.mainParamBlock h3{
+	font-family: 'sabon';
+	font-weight: normal;
+	font-size: 16px;
+	margin: 10px 0;
+}
+.mainParamBlock h2{
+	font-family: 'sabon';
+	font-weight: normal;
+	font-size: 16px;
+}
+.mainParamBlock .colorSelector{
+	width: 230px;
+	margin: 30px auto 0 auto;
+}
+.mainParamBlock .colorSelector a{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	border: 1px solid #fff;
+	background-color: #fff;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.mainParamBlock .colorSelector a.selected{
+	border-color: #b7b7b7;
+	background-color: #f6f6f6;
+}
+.mainParamBlock .colorSelector i{
+	border:solid 1px #000;
+	display: block;
+	width: 28px;
+	height: 28px;
+	margin: 3px 0 0 3px;
+	overflow: hidden;
+}
+.mainParamBlock .colorSelector i img{
+	display: block;
+	width: 28px;
+	height: 28px;
+}
+.mainParamBlock .colorSelector a:nth-child(5n+5){
+	margin-right: 0;
+}
+.mainParamBlock .colorSelector a:last-child{
+	margin-right: 0;
+}
+.mainParamBlock .sizeSelector{
+	width: 280px;
+	margin: 30px auto 0 auto;
+}
+.mainParamBlock .sizeSelector a{
+	display: inline-block;
+	width: 	38px;
+	height: 18px;
+	line-height: 18px;
+	margin: 0 20px 20px 0; 
+	text-align: center;
+	border: 1px solid #d7d7d7;
+	font-size: 14px;
+	color: #333;
+}
+.mainParamBlock .sizeSelector a.selected{
+	background-color: #d7d7d7;
+	color: #fff;
+}
+.mainParamBlock .sizeSelector a:nth-child(5n+5){
+	margin-right: 0;
+}
+.mainParamBlock .sizeSelector a:last-child{
+	margin-right: 0;
+}
+.mainParamBlock .sizeSelector .outOf{
+	background:url(../images/details_sizeOutOfStock.png) no-repeat scroll left bottom / 100% 100%;	
+	border-color: #d7d7d7;
+	color: #959595;
+}
+.mainParamBlock .sizeDescript {
+	margin: 30px 0;
+}
+.mainParamBlock .sizeDescript a{
+	color: #6c696a;
+}
+.mainParamBlock .sizeDescript a i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background:url(../images/icons.png) no-repeat -149px -44px;	
+	vertical-align: -3px;
+	margin-right: 4px;
+}
+
+
+.mainParamBlock .quantityGroup{
+	margin-top: 30px;
+}
+.mainParamBlock .quantityGroup b{
+	font-size:14px;
+	vertical-align: 14px;
+	margin-right: 15px;
+}
+.mainParamBlock .quantityGroup .numStep{
+	display:inline-block;
+	height: 40px;
+	width: 115px;
+	border: 1px solid #b7b7b7;
+	cursor: pointer;
+}
+.mainParamBlock .quantityGroup .numStep input{
+	font-family: Microsoft YaHei,宋体,Arial, sans-serif;
+	font-size: 14px;
+	line-height: 40px;
+	color: #000000;
+	float: left;
+	text-align: center;	
+	width: 53px;
+	height: 40px;
+	border: none;
+	background:#ffffff;
+	border-left: 1px solid #b7b7b7;
+	border-right: 1px solid #b7b7b7;
+}
+.mainParamBlock .quantityGroup .numStep .add{
+	float:left;
+	display: block;
+	width: 30px;
+	height: 40px;
+	background-image: url(../images/add_subtract.png);
+	background-position: -30px 0px;
+}
+.mainParamBlock .quantityGroup .numStep .subtract{
+	float:left;
+	display: block;
+	width: 30px;
+	height: 40px;
+	background-image: url(../images/add_subtract.png);
+}
+.mainParamBlock .inventories{
+	font-size: 14px;
+	margin-top: 15px;
+	visibility: hidden;
+}
+.mainParamBlock .actionRow{
+	margin-top: 25px;
+}
+.mainParamBlock .actionRow a{
+	font-family: 'sabon';
+	display: inline-block;
+	width: 136px;
+	height: 41px;
+	line-height:41px;
+	font-size: 18px;
+}
+.mainParamBlock .actionRow .toWish{
+	background-color: #fff;
+	border: 2px solid #000000;
+	color: #000000;
+	margin-right: 15px;
+}
+.mainParamBlock .actionRow .toWish:hover{
+	background-color: #34302f;
+	border: 2px solid #34302f;
+	color: #fff;
+}
+.mainParamBlock .actionRow .toCar{
+	background-color: #fff;
+	border: 2px solid #000000;
+	color: #000000;
+}
+.mainParamBlock .actionRow .toCar:hover{
+	background-color: #34302f;
+	border: 2px solid #34302f;
+	color: #fff;
+}
+.mainParamBlock .shareLabel{
+	margin-top: 45px;
+}
+.mainParamBlock .shareLabel a{
+	display: inline-block;
+	width: 150px;
+	line-height: 14px;
+	height: 14px;
+	color: #666;
+}
+.mainParamBlock .shareLabel a span{
+	vertical-align: top;
+	margin-right: 20px;
+}
+.mainParamBlock .shareLabel i{
+	display: inline-block;
+	width: 13px;
+	height: 14px;
+	background: url(../images/icons.png) no-repeat -131px -73px;
+}
+.mainParamBlock .shareGroup{
+	margin-top: 35px;
+}
+.mainParamBlock .shareGroup a{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-left: 20px;
+	background:url(../images/icons.png) no-repeat;
+}
+.mainParamBlock .shareGroup .icon01{
+	background-position: 0 -24px;
+	margin-left: 0;
+}
+.mainParamBlock .shareGroup .icon02{
+	background-position: -32px -24px;
+}
+.mainParamBlock .shareGroup .icon03{
+	background-position: -64px -24px;
+}
+.mainParamBlock .shareGroup .icon04{
+	background-position: 0 -56px;
+}
+.mainParamBlock .shareGroup .icon05{
+	background-position: -32px -56px;
+}
+.extraPanel{
+	margin-top: 70px;
+}
+.extraPanel .mightLikeGroup{
+	float:left;
+	width: 59%;
+}
+.extraPanel h4{
+	font-family: 'sabon';
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 36px;
+	height: 36px;
+}
+.extraPanel .separator{
+	height: 1px;
+	overflow: hidden;
+	background-color: #000;
+}
+.extraPanel .listGroup{
+	position: relative;
+	margin-top: 20px;
+	height: 220px; 
+}
+.extraPanel .mightLikeGroup .listGroup .listContainer{
+	position: absolute;
+	top: 0;
+	left: 40px;
+	right:40px;
+	height:220px;
+	overflow:hidden;
+}
+.extraPanel .mightLikeGroup .listGroup .listContainer ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.extraPanel .mightLikeGroup .listGroup .listContainer ul li{
+	float:left;
+	margin-right:30px;
+	width: 150px;
+}
+.extraPanel .mightLikeGroup .listBlock .listContainer ul img{
+	width: 220px;
+	height: 150px;
+}
+.extraPanel .pageArrow{
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 13px;
+	height: 21px;
+	background:url(../images/icons.png) no-repeat;
+	display: none;
+}
+.extraPanel .leftArrow{
+	left: 0;
+	background-position: -97px -37px;
+}
+.extraPanel .rightArrow{
+	right: 0;
+	background-position: -110px -37px;
+}
+
+
+.extraPanel .leftArrow.unable{
+	right: 0;
+	background-position: -123px -38px;
+}
+.extraPanel .rightArrow.unable{
+	background-position: -136px -38px;
+}
+.extraPanel .recentViewGroup{
+	float:left;
+	width: 41%;
+}
+.extraPanel .recentViewGroup .midstBlock{
+	width: 295px;
+	margin: 0 auto;
+}
+.extraPanel .recentViewGroup .listContainer{
+	position:relative;
+	margin:0 auto;
+	width: 150px;
+	height:220px;
+	overflow: hidden;
+}
+.extraPanel .recentViewGroup .listContainer ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.extraPanel .recentViewGroup .listContainer li{
+	float: left;
+	margin-right: 20px;
+	width: 150px;
+}
+.extraPanel .recentViewGroup .listContainer li img{
+	width: 150px;
+	height: 220px;
+}
+.extraPanel .clearFloat{
+	height: 70px;
+}
+.mainParamBlock h6{
+	display: none;
+	padding: 0 40px;
+	font-size: 24px;
+	line-height: 70px;
+	font-weight: normal;
+}
+.phoneOption{
+	position:relative;
+	display:none;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 30px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.phoneOption a{
+	position:absolute;
+	top:0;
+	width:81px;
+	height:80px;
+	display: block;
+}
+.phoneOption .back{
+	left:0;
+	background: url(../images/phone/details_back.png);
+}
+.phoneOption .phoneShoppingcar{
+	top:24px;
+	width: 45px;
+	height: 38px;
+	right:10px;
+	background: url(../images/phone/shoppingcarBtn.png);
+}
+.phoneOption .phoneShoppingcar span{
+	position:absolute;
+	top:-4px;
+	left:12px;
+	display:block;
+	height: 20px;
+	width:20px;
+	border:1px solid #f7f7f7;
+	background-color: #231f20;
+	color: #fff;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 13px;
+}
+
+
+
+
+@media only screen and (max-width: 784px) {
+	.phoneOption{
+		display:block;
+		margin-bottom: 20px;
+	}	
+	.extraPanel{
+		display: none;
+	}
+	.mainPanel .navGroup {
+		display: none;
+	}
+	.header,.topNavigation .phoneViewTopMenu {
+		display: none;
+	}
+	
+	.mainPreviewBlock {
+		float: none;
+		width: 100%;
+		max-width: 590px;
+		margin: 0 auto;
+	}
+	.mainPreviewBlock .showMore {
+		display: none;
+	}
+	.mainParamBlock{
+		float: none;
+		text-align: left;
+		margin-top: 40px;
+		width: auto;
+		border-top: 1px solid #e6e6e6;
+	}
+	
+	.mainParamBlock h1 {
+		 padding: 0;
+		 font-size: 30px;
+		 padding: 0 40px;
+	}
+	.mainParamBlock .goodsNumber {
+		display: none;
+	}
+	.mainParamBlock .price {
+		font-size: 30px;
+		border-bottom: 1px solid #e6e6e6;
+		padding: 0 40px;
+	}
+	.mainParamBlock h2 ,.mainParamBlock h3{
+		font-size: 24px;
+		font-weight:  bold;
+		height: 80px;
+		line-height: 80px;
+		padding: 0 40px;
+	}
+	.mainParamBlock p {
+		font-size: 20px;
+		width: auto;
+		margin: 0;
+		line-height: 30px;
+		padding: 0 40px;
+	}
+
+	.mainParamBlock h6{
+		display: block;
+	}
+	.mainParamBlock .colorSelector {
+		margin: 0;
+		width: auto;	
+		padding: 0 30px 0 40px;	
+	}
+	.mainParamBlock .colorSelector a{
+		width: 66px;
+		height: 66px;
+	}
+	.mainParamBlock .colorSelector i{
+		width: 58px;
+		height: 58px;
+	}
+	.mainParamBlock .colorSelector i img{
+		display: block;
+		width: 58px;
+		height: 58px;
+	}
+	.mainParamBlock .colorSelector a:nth-child(5n+5){
+		margin-right: 10px;
+	}
+	.mainParamBlock .sizeSelector {
+		margin: 0;
+		width: auto;
+		padding: 0 20px 0 40px;		
+	}
+	.mainParamBlock .sizeSelector a{
+		font-size: 18px;
+		width: 60px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.mainParamBlock .sizeSelector a.selected{
+		color:#333;
+		background-color: #fff;
+		border: 1px solid #000;
+	}
+	.mainParamBlock .sizeSelector a:nth-child(5n+5){
+		margin-right: 20px;
+	}
+	.mainParamBlock .sizeDescript{
+		text-align: center;
+		font-size: 20px;
+	}
+	
+	.mainParamBlock .quantityGroup {
+		padding: 0 40px;
+		margin: 0;
+	}
+	.mainParamBlock .quantityGroup b {
+		display: block;
+		font-size: 24px;
+		line-height: 70px;
+		font-weight: normal;
+	}
+	.mainParamBlock .quantityGroup .numStep {
+		width: 250px;
+	}
+	.mainParamBlock .quantityGroup .numStep input {
+		width: 186px;
+	}
+	.mainParamBlock .inventories{
+		text-align: center;
+	}
+	.mainParamBlock .actionRow .toWish {
+		display: none;
+	}
+	.mainParamBlock .shareLabel ,.mainParamBlock .shareGroup{
+		display: none;
+	}
+	.mainParamBlock .actionRow {
+		height: 60px;
+		line-height: 140px;
+		background-color: #f4f4f4;
+		border-top:1px solid #e6e6e6;
+		border-bottom: 1px solid #e6e6e6;
+		padding: 40px 30px;
+	}
+	.mainParamBlock .actionRow .toCar {
+		display:block;
+		width: auto;
+		height: 56px;
+		line-height: 56px;
+		text-align: center;
+		background-color: #000;
+		color: #fff;
+		font-size: 24px;
+	}
+	.mainPreviewBlock .phoneNavBlock{
+		display: block;
+	}
+
+	
+}

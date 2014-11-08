@@ -1,0 +1,180 @@
+.textCenter{
+	text-align: center; 
+}
+.textLeft{
+	text-align: left;
+}
+.m7p_tSpacer{
+	height: 20px;
+}
+.m7p_top_navPanel{
+	margin-bottom: 30px;
+}
+.m7p_button{
+	display:inline-block;
+	background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    height: 27px;
+    font-size: 12px;
+    padding: 0 20px;
+    cursor: pointer;
+	line-height: 20px;
+    
+}
+.m7p_button:hover{
+	background-color: #000;
+	color: #fff;
+}
+a.m7p_button{
+	line-height: 27px;
+}
+.m7p_pageTitle{
+	font-size: 22px;
+	padding-bottom: 20px;
+}
+
+.m7p_formList li{
+	width: 100%;
+	padding-bottom: 10px;
+	clear: both;
+}
+.m7p_formList .m7p_halfLeft{
+	float: left;
+	width: 48%;
+	clear: none;
+}
+.m7p_formList .m7p_halfRight{
+	float: right;
+	width: 48%;
+	clear: none;
+}
+.m7p_formList li label{
+	display: block;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.m7p_formList li label em{
+	color: #f00;
+	text-align: left;
+	margin: 0 5px 0;
+}
+.m7p_formList li .m7p_inputBox{
+	width: 100%;
+}
+.m7p_formList li .m7p_inputBox .inputText{
+	border: 1px solid #c3c3c3;
+    padding: 0 10px;
+    clear: both;
+}
+.m7p_formList li .m7p_inputBox .inputText input{
+	width: 100%;
+	height: 35px;
+	border: none;
+}
+
+.m7p_formList li .m7p_inputBox .inputTextarea{
+	border: 1px solid #c3c3c3;
+    clear: both;
+    padding-left: 6px;
+}
+.m7p_formList li .m7p_inputBox .inputTextarea textarea{
+	width: 100%;
+	border: none;
+	height: 145px;
+	resize: none;
+}
+.m7p_formList li .m7p_inputBox .inputSelect{
+	border: 1px solid #c3c3c3;
+    clear: both;
+}
+.m7p_formList li .m7p_inputBox .inputSelect select{
+	display: block;
+	border: none;
+	width: 100%;
+	padding: 8px 10px;
+}
+.m7p_formList li .m7p_inputBox .inputSelect select option{
+	padding: 0 10px;
+}
+.m7p_formList .m7p_checkboxRow {
+	padding-bottom: 20px;
+}
+.m7p_formList .m7p_checkboxRow input[type="checkbox"]{
+	margin-right: 10px;
+}
+.m7p_formList .m7p_checkboxRow span{
+	vertical-align: 2px;
+}
+.m7p_validationAdvice{
+	background: url(../images/account_validation_advice_bg.gif) no-repeat 2px 3px;
+	margin: 3px 0 0;
+	padding-left: 12px;
+	font-size:11px;
+	color: #eb340a;
+	visibility: hidden;
+}
+.m7p_formList li .m7p_inputBox .m7p_validationFailed{
+	border-color: #f00;
+}
+.m7p_messages{
+    width: 100%;
+}
+.m7p_messages .successMsg,.m7p_messages .errorlMsg{
+	border-style: solid !important;
+    border-width: 1px !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    line-height: 1.63636;
+    margin-bottom: 18px;
+    padding: 8px 10px;
+}
+.m7p_messages .successMsg{
+	background-color: #eff5ea;
+    border-color: #446423;
+    color: #3d6611;
+}
+.m7p_messages .errorlMsg{
+	background-color: #faebe7;
+    border-color: #f16048;
+    color: #df280a;
+}
+.m7p_contentMainPanel{
+	float: right;
+	width: 75%;
+}
+
+.m7p_bSpacer{
+	height: 30px;
+}
+@media only screen and (max-width: 784px) {
+	.m7p_contentMainPanel{
+		float: none;
+		width: auto;
+	}
+	.m7p_button{
+		width: 100%;
+	}
+	a.m7p_button{
+		width: auto;
+		text-align: center;
+		padding: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,290 @@
+.subViewBlock{
+	position:relative;
+	margin-top: 20px;
+	color: #fff;
+}
+.subViewBlock img{
+	width: 100%;
+}
+.subViewBlock .textBlock{
+	position: absolute;
+} 
+.subViewBlock .textBlock01{
+	position: absolute;
+	left: 0;
+	top: 0;
+} 
+.subViewBlock .leftBlock{
+	display:block;
+	position: relative;
+	float:left;
+	width: 66%;
+}
+.subViewBlock .leftBlock .textBlock{
+	position: absolute;
+	top:12.5%;
+	right:10%;
+	width: 42%;
+}
+.subViewBlock .leftBlock .textBlock h1{
+	font-size: 30px;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.subViewBlock .leftBlock .textBlock p{
+	font-size: 18px;
+}
+.subViewBlock .leftBlock .buyBtn{
+	display: block;
+	width: 150px;
+	height: 45px;
+	background:url(../images/buyButton08.png) no-repeat 0 0;
+	position:absolute;
+	right:10.6%;
+	bottom: 6.6%;
+}
+.subViewBlock .rightBlock{
+	position:absolute;
+	display: block;
+	width: 31.5%;
+	right: 0;
+	top: 0;
+	color: #fff;
+}
+.subViewBlock .rightBlock .textBlock{
+	width: 100%;
+	top: 12.5%;
+	left: 0;
+	text-align: center;
+}
+.subViewBlock .rightBlock h1{
+	font-size: 30px;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.subViewBlock .rightBlock .textBlock.bText{
+	bottom: 7.5%;
+	font-size: 18px;
+	top: auto;
+	line-height:25px;
+	max-height: 50px; 
+	overflow: hidden;
+}
+
+.recommendBlock{
+	height: 660px;
+	width: 100%;
+	position: relative;
+	margin-top: 20px;
+}
+.recommendBlock .descriptContainer h2{
+	font-family: 'times';
+	font-size: 24px;
+	font-weight: normal;
+}
+.recommendBlock li{
+	height: 660px;
+	position:relative;
+	width: 315px;
+}
+.recommendBlock li img{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.recommendBlock li .descriptContainer{
+	height: 315px;
+	width: 315px;
+}
+.recommendBlock li .descriptContainer .content{
+	height: 315px;
+	width: 315px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #000;
+	border: 1px solid #696969;
+}
+
+.recommendBlock li .descriptContainer h1{
+	font-size: 24px;
+	font-weight: normal;
+}
+.recommendBlock li .descriptContainer p{
+	font-size: 18px;
+	padding: 30px 60px 0 60px;
+}
+.recommendBlock .leftBlock{
+	position: absolute;
+	top: 0;
+	left: 0;
+} 
+.recommendBlock .middleBlock{
+	margin: 0 auto;
+}
+.recommendBlock .middleBlock img{
+	bottom: auto;
+	top: 0;
+}
+.recommendBlock .middleBlock .descriptContainer{
+	position:absolute;
+	bottom: 0;
+	left: 0;
+}
+.recommendBlock .rightBlock{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.bSpacer{
+	height: 60px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 985px) {	
+	.recommendBlock{
+		height: auto;
+	}
+	.recommendBlock li{
+		height: 335px;
+		width: auto;
+	}
+	.recommendBlock .leftBlock{
+		position:relative;
+		float: none;
+	}
+	.recommendBlock .descriptContainer,.recommendBlock .imgContainer{
+		position: absolute;
+		top: 10px;
+		height: 315px;
+		width: 315px;
+	}
+	.recommendBlock .leftBlock .descriptContainer{
+		left: 30px;
+	}
+	.recommendBlock .leftBlock .imgContainer{
+		right: 30px;
+	}
+	.recommendBlock .middleBlock{
+		margin: 0;
+	}
+	.recommendBlock .middleBlock .descriptContainer{
+		right: 30px;
+		left: auto;
+	}
+	.recommendBlock .middleBlock .imgContainer{
+		left: 30px;
+	}
+	.recommendBlock .rightBlock{
+		position: relative;
+	}
+	.recommendBlock .rightBlock .descriptContainer{
+		left: 30px;
+	}
+	.recommendBlock .rightBlock .imgContainer{
+		right: 30px;
+	}
+	
+	
+}
+@media only screen and (max-width: 767px) {
+	.recommendBlock{
+		height: auto;
+		padding-top: 40px;
+		border-top: 1px solid #ccc;
+	}
+	.recommendBlock li{
+		position:static;
+		height: auto;
+		width: auto;
+		text-align: center;
+		padding-bottom: 40px;
+	}
+	.recommendBlock li img {
+		position: static;
+		width: 100%;
+		max-width: 315px;
+	}
+	.recommendBlock li .descriptContainer {
+		height: auto;
+		width: auto;
+	}
+	.recommendBlock li .descriptContainer .content{
+		width: auto;
+		display: block;
+	}
+	.recommendBlock .middleBlock .descriptContainer {
+		position: static;
+	}
+	
+	.recommendBlock .leftBlock{
+		position: static;
+	}
+	.recommendBlock .rightBlock{
+		position: static;
+	}
+	.bSpacer{
+		height: 0;
+	}
+}
+@media only screen and (max-width: 784px) {
+	.subViewBlock{
+		text-align: center;
+	}
+	.subViewBlock .leftBlock {
+		float:none;
+		display:inline-block;
+		width: 100%;
+		max-width: 660px;
+	}
+	.subViewBlock .leftBlock .textBlock{
+		text-align: left;
+	}
+	
+	.subViewBlock .rightBlock{
+		position:static;
+		display:inline-block;
+		width: 100%;
+		max-width: 315px;
+		margin-top: 40px;
+		color: #000;
+	}
+	.subViewBlock .rightBlock .textBlock{
+		position: static;
+		margin-top: 20px;
+	}
+	.recommendBlock  .imgContainer{
+		display: block;
+		
+	}
+	
+	.recommendBlock .descriptContainer h2{
+		font-size: 36px;
+		line-height: 80px;
+	}
+	.recommendBlock li .descriptContainer p {
+		font-size: 24px;
+		padding: 0 20px;
+	}
+	.recommendBlock li .descriptContainer .content {
+		height: auto;
+		width: auto;
+	}
+	.recommendBlock li .descriptContainer .content br{
+		display: none;
+	}
+	
+}
+
+@media only screen and (max-width: 560px) {
+	.subViewBlock .leftBlock .textBlock{
+		right: auto;
+		width: 80%;
+		left: 10%;
+		bottom: 40%;
+		overflow: hidden;
+	}
+
+	
+}
+
+

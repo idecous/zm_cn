@@ -1,0 +1,467 @@
+.topNavigation .topNavlistModule .current {
+	color: #b6a483;
+}
+.shadow01{
+	vertical-align: top;
+}
+.buyBtn {
+    background: url("../images/buyButton03.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 48px;
+    width: 153px;
+}
+.subViewBlock{
+	height: 725px;
+	width: 100%;
+	position: relative;
+	margin-top: 10px;
+}
+.subViewBlock li{
+	height: 725px;
+	position:relative;
+}
+.subViewBlock li h2{
+	font-family: 'times';
+	font-size: 36px;
+	line-height: 40px;
+}
+.subViewBlock .leftBlock{
+	position:absolute;
+	left:0;
+	top:0;
+	width: 320px;
+}
+.subViewBlock .leftBlock .imgContainer{
+	width: 320px;
+	height: 480px;
+	overflow: hidden;
+}
+.subViewBlock .leftBlock .descriptContainer{
+	position: absolute;
+	height:220px;
+	width:300px;
+	left:10px;
+	bottom:0;
+	width: 300px;
+	height:221px;
+}
+.subViewBlock .leftBlock p{
+	line-height: 25px;
+	font-size: 14px;
+	margin-top: 12px;
+}
+.subViewBlock .leftBlock .buyBtn{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.subViewBlock .middleBlock{
+	margin:0 auto;
+	height: 720px;
+	width: 320px;
+	border: 2px solid #eff2eb;	
+}
+.subViewBlock .middleBlock .descriptContainer{
+	position: absolute;
+	height: 370px;	
+	width:300px;
+	top:40px;
+	left:10px;
+}
+.subViewBlock .middleBlock p{
+	line-height: 25px;
+	font-size: 14px;
+	margin-top: 12px;
+}
+.subViewBlock .middleBlock .imgContainer{
+	position:absolute;
+	left:0;
+	bottom:0;
+	width: 320px;
+	height: 240px;
+}
+.subViewBlock .middleBlock .buyBtn{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.subViewBlock .rightBlock{
+	position:absolute;
+	right:0;
+	top:0;
+	width: 320px;
+}
+.subViewBlock .rightBlock .imgContainer{
+	width: 320px;
+	height: 425px;
+	overflow: hidden;
+}
+.subViewBlock .rightBlock .descriptContainer{
+	position: absolute;
+	bottom:0;
+	left:10px;
+	width: 300px;
+	height:275px;
+}
+.subViewBlock .rightBlock p{
+	line-height: 25px;
+	font-size: 14px;
+	margin-top: 12px;
+}
+.subViewBlock .rightBlock .buyBtn{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.separator{
+	height: 50px;
+}
+.moreTitle{
+	font-family: 'times';
+	text-align: center;
+	font-size: 24px;
+	height: 85px;
+	line-height: 85px;
+}
+
+.moreGroup{
+	width:100%;
+	height: 345px;
+	position: relative;
+}
+.moreGroup li{
+	width: 318px;
+	height: 318px;
+	border: 1px solid #a2b286;
+	margin: 0 auto;
+}
+
+.moreGroup li:first-child{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.moreGroup li.last{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.moreGroup li a{
+	position:relative;
+	display: block;
+	width: 318px;
+	height: 298px;
+	padding-top: 20px;
+	zoom: normal;
+	cursor: pointer;
+}
+.moreGroup li a .mask{
+	position:absolute;
+	left:1px;
+	top:1px;
+	width: 100%;
+	height: 318px;
+	background-color:#f4f6f1;
+	opacity: 0.3;
+	filter: Alpha(Opacity=30);
+	visibility: hidden;
+}
+.moreGroup li a:hover{
+	zoom:1;
+}
+.moreGroup li a:hover .mask{
+	visibility: visible;
+}
+.moreGroup li .imgContainer{
+	width: 280px;
+	height: 230px;
+	margin: 0 auto 10px auto;
+}
+.moreGroup li h3{
+	font-size: 18px;
+	text-align: center;
+	font-weight: normal;
+	line-height: 25px;
+	font-family: 'times';
+}
+
+@media only screen and (min-width: 768px) and (max-width: 985px) {	
+	.subViewBlock{
+		height: auto;
+	}
+	.subViewBlock .leftBlock {
+		position:relative;
+		width: auto;
+		height: 500px;
+		border-bottom: 1px solid #ccc; 
+	}
+	.subViewBlock .leftBlock .imgContainer{
+		margin-left:20px; 
+	}
+	.subViewBlock .leftBlock .descriptContainer{
+		position:absolute;
+		padding: 25px 0 0;
+		width:400px;
+		height:455px;
+		top:0;
+		left:50%;
+		margin-left: -20px;
+	}
+	.subViewBlock .middleBlock {
+		border: none;
+		width: auto;
+		height:280px;
+		margin: auto auto;
+		border-bottom: 1px solid #ccc; 
+	}
+	.subViewBlock .middleBlock .descriptContainer {
+		position:absolute;
+		padding: 10px 0 0;
+		width:400px;
+		height:250px;
+		top:0;
+		left:50%;
+		margin-left: -370px;
+	}
+	.subViewBlock .middleBlock .imgContainer{
+		left: auto;
+		bottom:auto;
+		right: 20px;
+		top: 20px;
+	}
+	.subViewBlock .rightBlock {
+		position:relative;
+		width: auto;
+		height: 450px;
+	}
+	.subViewBlock .rightBlock .imgContainer{
+		margin: 20px 0 0 20px;
+	}
+	.subViewBlock .rightBlock .descriptContainer{
+		position:absolute;
+		padding: 25px 0 0;
+		width:400px;
+		height:402px;
+		top:0;
+		left:50%;
+		margin-left: -20px;
+	}
+	.separator {
+		height: 0;
+	}
+	.moreGroup{
+		height: 255px;
+		margin-top: 30px;
+	}
+	.moreGroup li {
+		width: 200px;
+		height: 225px;
+		border: none;
+	}
+	.moreGroup li a{
+		width: 200px;
+		height: 225px;
+		padding-top: 0;
+	}
+	.moreGroup li .imgContainer{
+		width: 200px;
+		height: 165px;
+		border: 1px solid #a2b286;
+	}
+	.moreGroup li .imgContainer img{
+		width: 200px;
+		height: 165px;
+	}
+	.moreGroup li:first-child{
+		left: 40px;
+	}
+	.moreGroup li.last{
+		right: 40px;
+	}
+	.moreGroup li a .mask{
+		height: 165px;
+	}
+	.mainPanel .shadow02{
+		display: none;
+	}
+	.moreTitle{
+		border-bottom: 1px solid #ccc;	
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.subViewBlock {
+		height: auto;
+	}
+	.subViewBlock li {
+		position: static;
+		height: auto;
+	}
+	.subViewBlock .leftBlock {
+		position: static;
+		text-align: center;
+		width: auto;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ccc;
+	}
+	.subViewBlock .leftBlock .descriptContainer {
+		position: static;
+		width: auto;
+		height:auto;
+		padding: 0 20px;
+	}
+	.subViewBlock .leftBlock .descriptContainer a{
+		position:static;
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.subViewBlock .leftBlock .imgContainer {
+		float: none;
+		margin-top: 10px;
+		height: 480px;
+		width:100%;
+		position: relative;
+	}
+	.subViewBlock .leftBlock .imgContainer img{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -160px;
+	}
+	
+	.subViewBlock .middleBlock {
+		text-align: center;
+		width:100%;
+		height:auto;
+		border: none;
+		margin-top:15px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ccc;
+	}
+	.subViewBlock .middleBlock .descriptContainer{
+		position: static;
+		width: auto;
+		height:auto;
+		padding: 0 20px;
+	}
+	.subViewBlock .middleBlock .descriptContainer a{
+		position:static;
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.subViewBlock .middleBlock .imgContainer {
+		position: relative;
+		float: none;
+		width:100%;
+		margin-top: 10px;
+		height: 240px;
+	}
+	.subViewBlock .middleBlock .imgContainer img{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -160px;
+	}
+	.subViewBlock .rightBlock {
+		position:static;
+		text-align: center;
+		width: auto;
+		height:auto;
+		border: none;
+		margin-top:15px;
+		padding-bottom: 20px;
+	}
+	.subViewBlock .rightBlock .descriptContainer{
+		position: static;
+		width: auto;
+		height:auto;
+		padding: 0 20px;
+	}
+	.subViewBlock .rightBlock .descriptContainer a{
+		position:static;
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.subViewBlock .rightBlock .imgContainer {
+		position: relative;
+		float: none;
+		width:100%;
+		margin-top: 10px;
+		height: 425px;
+	}
+	.subViewBlock .rightBlock .imgContainer img{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -160px;
+	}
+	.separator {
+		height: 0;
+	}
+	.moreTitle{
+		border-bottom: 1px solid #ccc;	
+	}
+	.moreGroup{
+		height: auto;
+		padding-bottom: 20px;
+	}
+	.moreGroup li{
+		position:relative;
+		width: 100%;
+		margin: 0;
+		border: none;
+		text-align: center;
+		height:340px;
+		border-bottom: 1px solid #a8b78e;
+	}
+	.moreGroup li a{
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		margin-left: -159px;
+	}
+	.moreGroup li:first-child,.moreGroup li.last{
+		position: relative;
+	}
+	.mainPanel .shadow02{
+		display: none;
+	}
+
+}
+@media only screen and (max-width: 360px) {
+	.subViewBlock .leftBlock .imgContainer {
+		text-align: center;
+		height: auto;
+	}
+	.subViewBlock .leftBlock .imgContainer img {
+		position:static;
+		width: 100%;
+		max-width: 320px;
+		margin: 0;
+	}
+	.subViewBlock .middleBlock .imgContainer {
+		text-align: center;
+		height: auto;
+	}
+	.subViewBlock .middleBlock .imgContainer img {
+		position:static;
+		width: 100%;
+		max-width: 320px;
+		margin: 0;
+	}
+	.subViewBlock .rightBlock .imgContainer {
+		text-align: center;
+		height: auto;
+	}
+	.subViewBlock .rightBlock .imgContainer img {
+		position:static;
+		width: 100%;
+		max-width: 320px;
+		margin: 0;
+	}
+	
+}
+
+

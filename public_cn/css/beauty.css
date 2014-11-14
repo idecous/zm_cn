@@ -1,0 +1,349 @@
+.topNavigation .topNavlistModule .current {
+	color: #bd81a2;
+}
+.subViewBlock{
+	position:relative;
+	margin-top: 20px;
+}
+.subViewBlock img{
+	width: 100%;
+}
+.subViewBlock .gray{
+	color: #393e3e;
+}
+.subViewBlock .gray h1{
+	font-size: 30px;
+}
+.subViewBlock .gray p{
+	font-size: 14px;
+}
+.subViewBlock h1{
+	font-size: 24px;
+	font-weight: normal;
+}
+.subViewBlock p{
+	font-size: 18px;
+	line-height: 18px;
+}
+.subViewBlock .buyBtn{
+	display: block;
+	width: 153px;
+	height: 48px;
+	background:url(../images/buyButton04.png) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	bottom: 40%;
+}
+.subViewBlock .textBlock{
+	text-align:right;
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	width: 69%;
+	height: 89%;
+}
+.subViewBlock .buyBtn:hover{
+	background-position: -152px 0;
+}
+
+.subViewBlock .leftBlock{
+	float:left;
+	position: relative;
+	width: 60%;
+	display: block;
+}
+.subViewBlock .rightBlock{
+	position:absolute;
+	width: 39%;
+	right: 0;
+	top: 0;
+	display: block;
+}
+
+.combinePanel{
+	margin-top: 25px;
+	background: url(../images/beauty_bg01.jpg) no-repeat center 0;
+	padding: 55px 0 20px 0;
+	
+}
+.videoTitle{
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+}
+.videoDescript{
+	font-family: 'times';
+	width:700px;
+	text-align: center;
+	margin: 10px auto 0 auto;
+	color: #000;
+	line-height: 14px;
+	font-size: 18px;
+	font-style: italic;	
+}
+.videoPlayer{
+	position:relative;
+	margin: 30px auto 0 auto;
+	width: 100%;
+	max-width: 720px;
+}
+.videoPlayer .bg{
+	width: 100%;
+	height: auto;
+}
+.videoPlayer video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.recommendTitle{
+	font-family: 'times';
+	margin-top: 65px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+}
+.recommendDescript{
+	width: 700px;
+	text-align: center;
+	margin: 10px auto 0 auto;
+	color: #666666;
+	line-height: 14px;
+}
+
+.recommendList{
+	position:relative;
+	margin-top: 20px;
+	height: 320px;
+	width: 100%;
+}
+.recommendList li{
+	position:relative;
+	width: 318px;
+	height: 318px;
+	border: 1px solid #bd81a2;
+	margin: 0 auto;
+}
+.recommendList li:first-child{
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+.recommendList li.last{
+	position:absolute;
+	top: 0;
+	right: 0;
+}
+.recommendList li .border{
+	position:absolute;
+	display:block;
+	width: 318px;
+	height: 318px;
+	cursor: pointer;
+}
+.recommendList li .border img{
+	opacity: 0.5;
+	filter: Alpha(Opacity=50);
+}
+.recommendList li .border:hover img{
+	opacity: 1;
+	filter: Alpha(Opacity=100);
+}
+
+.recommendList li .imgContainer{
+	width: 280px;
+	height: 200px;
+	margin: 20px auto 0 auto;
+}
+.recommendList li h4{
+	font-size: 14px;
+	margin: 5px auto 0 auto;
+	width: 275px;
+}
+.recommendList li p{
+	color: #999999;
+	width: 275px;
+	margin: 0 auto;
+	text-align: justify;
+	line-height: 15px;
+	font-size: 12px;
+}
+.recommendList li .buyBtn{
+	position:absolute;
+	bottom:4px;
+	right:10px;
+	display: block;
+	width: 91px;
+	height: 28px;
+	background:url(../images/buyButton05.png) no-repeat 0 0;
+}
+.recommendList li .buyBtn:hover{
+	background-position: -91px 0;
+}
+
+
+
+@media only screen and (min-width: 785px) and (max-width: 977px) {	
+	.recommendList{
+		height: auto;
+	}
+	.recommendList li{
+		width: 200px;
+		height: 270px;
+	}
+	.recommendList li:first-child{
+		left: 50px;
+	}
+	.recommendList li.last{
+		right: 50px;
+	}
+	.recommendList li .border{
+		width: 200px;
+		height: 270px;
+	}
+	.recommendList li .imgContainer{
+		width: 200px;
+		height: 142.8px;
+		margin-top: 10px;
+	}
+	.recommendList .imgContainer img{
+		width: 200px;
+		height: 142.8px;
+	}
+	.recommendList li h4{
+		width: auto;
+	    padding: 0 10px;
+	}
+	.recommendList li p {
+		width: auto;
+		padding: 0 10px;
+	}
+	
+}
+
+@media only screen and (min-width: 785px) and (max-width: 840px) {
+	.subViewBlock .buyBtn{
+		width: 91px;
+		height: 28px;
+		background: url("../images/buyButton05.png");
+		bottom: 12%;
+	}
+	.subViewBlock .buyBtn:hover{
+		background-position: -91px 0;
+	}
+}
+
+
+@media only screen and (max-width: 784px) {
+	.subViewBlock {
+		text-align: center;
+	}
+	.subViewBlock .leftBlock {
+		display:inline-block;
+		float: none;
+		height: auto;
+		padding-bottom: 20px;
+		width: 100%;
+		max-width: 600px;
+	}	
+	.subViewBlock .leftBlock .textBlock {
+		position:absolute;
+		text-align:right;
+		right: 10px;
+		top:40px;
+		bottom: 20px;
+		height: auto;
+	}
+	.subViewBlock .rightBlock {
+		position:relative;
+		display:inline-block;
+		float: none;
+		width: 390px;
+		width: 100%;
+		max-width: 390px;
+	}
+	.subViewBlock .rightBlock .textBlock {
+		position:absolute;
+		right: 20px;
+		top:40px;
+		bottom: 0;
+		text-align: right;
+	}
+	.subViewBlock .buyBtn {
+		bottom: 30%;
+	}
+	.videoDescript , .recommendDescript{
+		width: auto;
+		padding: 0 20px;
+	}
+	
+	.recommendList {
+		height: auto;
+		background-color: #fff;
+	}
+	.recommendList li {
+		width: auto;
+		height:auto;
+		border: none;
+		text-align: center;
+		border-bottom: 1px solid #bd81a2;
+		padding-bottom: 10px;
+	}
+	.recommendList li:first-child {
+		position:relative;
+		padding-top: 10px;
+	}
+	.recommendList li.last {
+		position:relative;
+		border-bottom:none;
+	}
+	.recommendList li .border {
+		width: 100%;
+		height: auto;
+		position: static;
+	}
+	.recommendList li p {
+		width: auto;
+		padding: 0 20px;
+		text-align: center;
+	}
+	.recommendList li .buyBtn {
+		position:static;
+		background: url("../images/buyButton04.png");
+	    display: block;
+	    height: 48px;
+	    width: 153px;
+	    display: inline-block;
+	    margin-top: 20px;
+	}
+	.recommendList li .buyBtn:hover {
+		background-position: -152px 0;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.subViewBlock .textBlock {
+		width: 100%;
+	}
+	.subViewBlock .buyBtn {
+		bottom: 15%;
+	}
+	.subViewBlock .textBlock p{
+		display: none;
+	}
+	.subViewBlock .leftBlock .textBlock {
+		top: 15px;
+	}
+	.subViewBlock .rightBlock .buyBtn {
+		margin-bottom: 20px;
+	}
+	.combinePanel .videoDescript{
+		width: auto;
+		margin: 10px 20px;	
+	}
+
+}
+

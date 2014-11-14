@@ -1,0 +1,286 @@
+.topNavigation .topNavlistModule .current {
+	color: #76627f;
+}
+.buyBtn{
+	display: block;
+	width: 153px;
+	height: 48px;
+	background:url(../images/buyButton06.png) no-repeat 0 0;
+}
+.buyBtn:hover{
+	background-position: -152px 0;
+}
+.subViewBlock {
+	position:relative;
+	width: 100%;
+}
+.subViewBlock .bg{
+	width: 100%;
+}
+.subViewBlock .goods{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 49%;
+	z-index: 1;
+}
+.subViewBlock .goods img{
+	width: 100%;
+}
+.subViewBlock .shadow{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	z-index: 2;
+}
+.subViewBlock  .textBlock{
+	position: absolute;
+	top: 25.9%;
+	left: 0;
+	z-index: 3;
+}
+.subViewBlock .textBlock h3{
+	font-family: 'times';
+	font-size: 28px;
+	font-weight: normal;
+}
+.subViewBlock .textBlock h1{
+	font-family: 'times';
+	font-size: 48px;
+	font-weight: normal;
+}
+.subViewBlock .textBlock h2{
+	font-size: 36px;
+}
+.subViewBlock .textBlock p{
+	font-size: 14px;
+	width: 70%;
+}
+.subViewBlock .buyBtn{
+	position: absolute;
+	left: 0;
+	bottom: 10%;
+}
+
+
+.mainListPanel{
+	height: 645px;
+	width: 100%;
+	position: relative;
+}
+.mainListPanel li{
+	position:relative;
+	width: 320px;
+	height: 620px;
+	margin-left:20px;
+	margin: 0 auto;
+}
+.mainListPanel li:first-child{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mainListPanel li.last{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.mainListPanel li .imgContainer{
+	width: 320px;
+	height: 380px;
+	overflow: hidden;
+}
+.mainListPanel li h3{
+	font-family: 'times';
+	font-size: 18px;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 30px;
+}
+.mainListPanel li h1{
+	font-family: 'times';
+	font-size: 24px;
+	text-align: center;
+	font-weight: normal;
+}
+.mainListPanel li .separator{
+	overflow:hidden;
+	margin-top: 18px;
+	width: 320px;
+	height: 6px;
+	background: url(../images/jewelry_bg02.jpg);
+}
+.mainListPanel li p{
+	margin-top: 25px;
+	text-align: center;
+	color: #666;
+}
+
+
+.mainListPanel li .buyBtn{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -76px;
+}
+.moreTitle{
+	font-family: 'times';
+	text-align:center;
+	font-size:24px;
+	color: #76627f;
+	margin-top: 60px;
+}
+.moresShadow{
+	margin-top:25px;
+	width: 100%;
+}
+.otherListPanel{
+	position:relative;
+	margin-top:5px;
+	padding-bottom: 25px;
+	width: 100%;
+}
+.otherListPanel .group{
+	width: 100%;
+	margin:0 auto;
+	font-size: 0;
+	
+	display: -webkit-flex;
+	-webkit-flex-wrap: wrap;
+	-webkit-justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.otherListPanel .group a{
+	display: inline-block;
+	width: 235px;
+	height: 260px;
+	width: 250px\0;
+	width: 235px\9\0;
+}
+@media only screen and (max-width: 1020px) {
+	.otherListPanel .group a{
+		width: 235px;
+	}
+}
+@media only screen and (max-width: 980px) {
+	.mainListPanel{
+		height: auto;
+		border-top: 1px solid #ccc;
+		margin-top: 40px;
+	}
+	.mainListPanel li{
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.mainListPanel li:first-child{
+		position: static;	
+	}
+	.mainListPanel li.last{
+		position: static;	
+	}
+	.mainListPanel li .imgContainer {
+		width:auto;
+		height: auto;
+	}
+	.mainListPanel li .imgContainer img{
+		width: 100%;
+		max-width: 320px;
+	}
+	.mainListPanel li .separator {
+		display: none;
+	}
+	.mainListPanel li h3 {
+		margin-top: 10px;
+	}
+	.mainListPanel li p {
+		padding: 0 20px;
+	}
+	.mainListPanel li .buyBtn {
+		position: static;
+		display: inline-block;
+		margin-top:20px;
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 784px) {
+	.subViewBlock {
+		border-top: 1px solid #ccc;
+		text-align: center;
+	}
+	.subViewBlock .bg{
+		display: none;
+	}
+	.subViewBlock .shadow{
+		display: none;
+	}
+	.subViewBlock .goods{
+		position: relative;
+		width: auto;
+		height: auto;
+	}
+	.subViewBlock .goods img{
+		position: static;
+		margin: 0;
+		width: 100%;
+		max-width: 417px;
+	}
+	
+	.subViewBlock .textBlock{
+		position: static;
+		margin-top: 20px;
+	}
+	.subViewBlock .textBlock p {
+		width: auto;
+		padding: 10px 20px;
+	}
+	.subViewBlock .buyBtn {
+		position: static;
+		display: inline-block;
+		margin-top: 20px;
+	}
+}
+	
+@media only screen and (max-width: 970px) {
+	.moreTitle{
+		line-height: 50px;
+		border-bottom: 1px solid #ccc;
+	}
+	.moresShadow{
+		display: none;
+	}
+	.otherListPanel{
+		margin-top: 50px;
+	}
+	.otherListPanel .group{
+		width: 580px;
+	}
+	.otherListPanel .group a{
+		border: 1px solid #f3f3f4;
+		margin-bottom: 50px;
+	}
+}
+@media only screen and (max-width: 680px) {
+	.otherListPanel .group{
+		width: 490px;
+	}
+	.otherListPanel{
+		margin-top: 20px;
+	}
+	.otherListPanel .group a{
+		margin-bottom: 20px;
+	}	
+}
+@media only screen and (max-width: 520px) {
+	.otherListPanel .group{
+		width: 237px;
+	}
+}
+
+
+

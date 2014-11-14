@@ -1,0 +1,12 @@
+.m7p_contentMainPanel h1{
+	font-size: 24px;
+}
+.m7p_contentMainPanel img{
+	width: 100%;
+	margin-top: 15px;
+}
+@media only screen and (max-width: 784px) {
+	.m7p_contentMainPanel h1{
+		text-align: center;
+	}
+}

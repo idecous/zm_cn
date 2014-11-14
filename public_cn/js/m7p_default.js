@@ -349,8 +349,85 @@ var EVE_ShoppingCar = function(){
 
 var G_shoppingCar;
 
+var EBE_AccordionManager = function(){
+	var winEl = $(window);
+	var el = $(".com_accordion");
+	if(el.length==0){return;}
+	var liEls = el.children("li");
+	var subTitleEls = liEls.children(".subTitleRow"); 
+	var subTitleIconEls = subTitleEls.children("i"); 
+	var subTitleTextEls = subTitleEls.children("span"); 
+	var openIndex = 0;
+	var liHeights =[];
+	
+	subTitleEls.click(function(){
+		var index = subTitleEls.index(this);
+		if( index == openIndex  ){
+			if( subTitleIconEls.eq(index).hasClass("open") ){
+				subTitleIconEls.eq(index).removeClass("open");
+				liEls.eq(index).stop();
+				subTitleTextEls.eq(index).height("auto");
+				subTitleEls.eq(index).height("auto");
+				liEls.eq(index).animate({"height":liHeights[index] });
+			}else{
+				subTitleIconEls.eq(index).addClass("open");
+				liEls.eq(index).stop();
+				liEls.eq(index).animate({"height":38 });
+				subTitleTextEls.eq(index).animate({"height":22 });
+			}
+			return;
+		}
+		subTitleIconEls.eq(openIndex).addClass("open");
+		liEls.eq(openIndex).stop();
+		liEls.eq(openIndex).animate({"height":38});
+		subTitleTextEls.eq(openIndex).animate({"height":22 });
+		openIndex = index;
+		subTitleIconEls.eq(openIndex).removeClass("open");
+		liEls.eq(openIndex).stop();
+		liEls.eq(openIndex).animate({"height":liHeights[openIndex] });
+		subTitleTextEls.eq(index).height("auto");
+		subTitleEls.eq(index).height("auto");
+	});
+	function resizeHandler(){
+		el.css("visibility","hidden");	
+		liEls.stop().remove("open").height("auto");
+		subTitleTextEls.height("auto");
+		subTitleEls.height("auto");
+		liEls.each(function(index,node){
+			var liEl = liEls.eq(index);
+			liHeights[index] = liEl.height();
+			if(openIndex != index){
+				liEl.height(38);
+				subTitleTextEls.eq(index).height(22);
+				subTitleIconEls.eq(index).addClass("open");
+			}else{
+				liEl.height( liHeights[index] );
+				subTitleTextEls.eq(index).height("auto");
+				subTitleEls.eq(index).height("auto");
+			}		
+		});
+		el.css("visibility","visible");
+	}
+	winEl.resize(resizeHandler);	
+	resizeHandler();
+};
+
 $(function(){
 	new EBE_MobileManager();
 	new EBE_NormalMenuManager();
+	new EBE_AccordionManager();
 	G_shoppingCar = new EVE_ShoppingCar();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+

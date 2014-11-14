@@ -1,0 +1,307 @@
+.topNavigation .topNavlistModule .checked {
+	color: #4f5677;
+}
+.sub01ViewBlock{
+	position:relative;
+	text-align: left;
+	white-space: nowrap;
+}
+.sub01ViewBlock .mark{
+	vertical-align: top;
+}
+.sub01ViewBlock .imgBlock{
+	display: inline-block;
+	width: 440px;
+	height: 580px;
+	vertical-align: top;
+	margin-top: 15px;
+	position: relative;
+}
+.sub01ViewBlock .imgBorderOut{
+	width: 418px;
+	height: 558px;
+	border:  1px solid #59627f;
+	padding: 19px 0 0 19px;
+	background-color: #fff;
+}
+
+.sub01ViewBlock .textBlock{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 450px;
+	white-space:normal;
+}
+.sub01ViewBlock .textBlock h3{
+	font-family: 'times';
+	color: #364466;
+	font-size: 30px;
+	line-height:30px;
+	font-weight: normal;
+	margin-top: 50px;
+}
+.sub01ViewBlock .textBlock h2{
+	font-family: 'times';
+	color: #364466;
+	font-size: 48px;
+	font-weight: normal;
+}
+.sub01ViewBlock .textBlock .shadow{
+	margin-top: 15px;
+}
+.sub01ViewBlock .textBlock p{
+	width: 83.3%;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: justify;
+	margin-top: 25px;
+}
+.sub01ViewBlock .textBlock .viewBtn{
+	position:absolute;
+	top: 415px;
+	display: block;
+	width: 153px;
+	height: 48px;
+	background:url(../images/viewBuyButton01.png) no-repeat -304px 0;
+}
+.sub01ViewBlock .textBlock .viewBtn:hover{
+	background-position: -152px 0;
+}
+
+.sub02ViewBlock{
+	position: relative;
+}
+.sub02ViewBlock .textBlock{
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 325px;
+}
+.sub02ViewBlock .textBlock h3{
+	font-family: 'times';
+	color: #364466;
+    font-size: 28px;
+    font-weight: normal;
+    left: 15px;
+    line-height: 30px;
+    margin-top: 15px;
+}
+.sub02ViewBlock .textBlock .shadow{
+	margin-top: 10px;
+}
+.sub02ViewBlock .textBlock p {
+	margin-top:20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    width: 310px;
+}
+.sub02ViewBlock .textBlock .buyBtn {
+    background: url("../images/viewBuyButton01.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 48px;
+    left: 15px;
+    position: absolute;
+    top: 465px;
+    width: 153px;
+}
+
+.sub02ViewBlock .infoGroup{
+	height: 520px;
+	float: right;
+}
+.sub02ViewBlock .infoGroup .infoBlock{
+	position:relative;
+	border: 1px solid #59627f;
+	display: inline-block;
+	padding: 10px;
+	height: 500px;
+}
+.sub02ViewBlock .infoGroup .infoBlock:first-child{
+	margin-right: 10px;
+}
+.sub02ViewBlock .infoGroup .infoBlock img{
+	height: 400px;
+    width: 300px;
+}
+.sub02ViewBlock .infoGroup .infoBlock h4 {
+	font-family: 'times';
+    color: #364466;
+    font-size: 18px;
+    font-weight: normal;
+}
+.sub02ViewBlock .infoGroup .infoBlock p {
+    color: #666666;
+    font-size: 12px;
+    line-height: 18px;
+    position: static;
+    width: 300px;
+}
+.sub02ViewBlock .infoGroup .infoBlock .buyBtn{
+	position:absolute;
+	left:auto;
+	top:auto;
+	right: 10px;
+	bottom: 7px;
+	display: block;
+	width: 96px;
+	height: 30px;
+	background:url(../images/buyButton02.png) no-repeat 0 0;
+}
+.sub02ViewBlock .infoGroup .infoBlock .buyBtn:hover{
+	background-position: -96px 0;
+}	
+
+.centerBlock .placeholder{
+	height: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.sub02ViewBlock .textBlock{
+		width:auto;
+		right:660px;
+	}
+	.sub02ViewBlock .textBlock h3{
+		width:auto;
+	}
+	.sub02ViewBlock .textBlock .shadow{
+		width: 100%;
+	}
+	.sub02ViewBlock .textBlock p{
+		width:auto;
+	}
+}
+
+@media only screen and (max-width: 910px) {
+	.sub01ViewBlock .textBlock{
+		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 860px) {
+	.sub01ViewBlock .mark{
+		display: none;
+	}
+	.sub01ViewBlock {
+		text-align: center;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ccc;
+	}
+	.sub01ViewBlock .textBlock {
+		position: static;
+		width: auto;
+	}
+	.sub01ViewBlock .textBlock h3 {
+		margin-top: 30px;
+	}
+	.sub01ViewBlock .textBlock .shadow {
+		display: none;
+	}
+	.sub01ViewBlock .textBlock p {
+		width: auto;
+		text-align: center;
+		padding: 0 30px;
+		margin-top: 15px;
+	}
+	.sub01ViewBlock .textBlock .viewBtn {
+		position: static;
+		display: inline-block;
+		margin-top: 15px;
+	}
+	.sub01ViewBlock .imgBlock{
+		display: block;
+		width: auto;
+	}
+	.sub01ViewBlock .imgBorderOut {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -220px;
+		text-align: left;
+	}
+	.sub02ViewBlock .textBlock {
+		position: static;
+		width: auto;
+		text-align: center;
+	}
+	.sub02ViewBlock .textBlock .shadow{
+		display: none;
+	}
+	.sub02ViewBlock .textBlock p {
+	   text-align: center;
+	   padding: 0 30px;
+	}
+	.sub02ViewBlock .textBlock .buyBtn {
+		position: static;
+		display: inline-block;
+		margin-top: 30px;
+	}
+	.sub02ViewBlock .infoGroup {
+		float: none;
+		text-align: center;
+		margin-top: 25px;
+		height: auto;
+	}
+	.sub02ViewBlock .infoGroup .infoBlock{
+		display: inline-block;
+		text-align: left;
+		border: 1px solid #fff;
+	}	
+}
+@media only screen and (max-width: 670px) {
+	.sub02ViewBlock .infoGroup .infoBlock{
+		border: 1px solid #59627f;
+	}
+	.sub02ViewBlock .infoGroup .infoBlock:first-child {
+		margin-right: 0;
+	}
+	.sub02ViewBlock .infoGroup .infoBlock:last-child{
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 470px) {
+	.sub01ViewBlock .imgBlock {
+		height: auto;
+	}
+	.sub01ViewBlock .imgBorderOut {
+		position: static;
+		text-align: center;
+		border: none;
+		margin: 0;
+		padding: 0;
+		width:100%;
+		height: auto;
+	}
+	.sub01ViewBlock .imgBorderOut img{
+		width: 100%;
+		max-width: 400px;
+	}
+	
+	.sub02ViewBlock .infoGroup .infoBlock {
+		border: none;
+		width: 100%;
+		text-align: center;
+		padding: 0 0 10px 0;
+		height: auto;
+	}
+	.sub02ViewBlock .infoGroup .infoBlock h4 {
+		line-height: 40px;
+	}
+	.sub02ViewBlock .infoGroup .infoBlock img {
+		width: 100%;
+		height: auto;
+		max-width: 300px;
+	}
+	.sub02ViewBlock .infoGroup .infoBlock p {
+		width: auto;
+		padding: 0 20px;
+	}
+	.sub02ViewBlock .infoGroup .infoBlock .buyBtn {
+		position:static;
+		display: inline-block;
+		margin-top: 20px;
+	}
+	
+}
+
+

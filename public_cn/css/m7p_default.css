@@ -1013,8 +1013,8 @@ a.m7p_button{
 	position: relative;
 }
 .com_accordion li .subTitleRow {
-	line-height: 22px;
-	font-size: 22px;
+	line-height: 18px;
+	font-size: 18px;
 	cursor: pointer;
 }
 .com_accordion li .subTitleRow i{
@@ -1046,7 +1046,7 @@ a.m7p_button{
 	padding: 0 10px;
 	margin-top: 24px;
 	margin-bottom: 25px;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 30px;
 	text-align: justify;
 }

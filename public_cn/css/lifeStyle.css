@@ -1,0 +1,239 @@
+.buyBtn{
+	display: block;
+	width: 153px;
+	height: 48px;
+	background:url(../images/buyButton07.png) no-repeat 0 0;
+}
+.buyBtn:hover{
+	background-position: -152px 0;
+}
+.topNavigation .topNavlistModule .current {
+	color: #8b5c18;
+}
+.subViewBlock{
+	background: url(../images/lifeStyle_bg01.jpg) no-repeat center;
+	width: 100%;
+}
+
+.subViewBlock li{
+	position:relative;
+	height: 459px;
+	
+}
+.subViewBlock li .imgBlock{
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+.subViewBlock li .shadow{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.subViewBlock li:first-child{
+	height: auto;
+}
+.subViewBlock li:first-child .imgBlock{
+	position: static;
+	display: block;
+}
+.subViewBlock li:first-child .imgBlock img{
+	width: 100%;
+}
+.subViewBlock li:first-child .shadow{
+	position: static;
+	vertical-align: top;
+}
+
+.subViewBlock li .textBlock {
+	position:absolute;
+	left:0;
+	top:0;
+	height: 100%;
+	width: 40%;
+}
+.subViewBlock li .textBlock h3{
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 75px;
+	font-family: 'times';
+}
+.subViewBlock li .textBlock h1{
+	font-size: 48px;
+	font-family: 'times';
+}
+.subViewBlock li .textBlock p{
+	font-size: 14px;
+	color: #333333;
+	text-align: justify;
+	margin-top: 10px;
+}
+.subViewBlock li .buyBtn{
+	position: absolute;
+	left: 10px;
+	bottom: 140px;
+}
+
+.subViewBlock li:last-child .textBlock {
+	left:auto;
+	right: 0;
+}
+.subViewBlock li:last-child .imgBlock{
+	left: 0;
+	right: auto;
+}
+
+.combinePanel{
+	position: relative;
+	height: 435px;   
+    width: 100%;
+    display: none;
+}
+
+.combinePanel .textBlock{
+	position: absolute;
+	width: 330px;
+	top: 50px;
+	left: 0;
+}
+.combinePanel .textBlock h2 {
+	font-family: 'times';
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+.combinePanel .textBlock p {
+	color: #666666;
+	margin-top: 10px;
+}
+.combinePanel .buyBtn {
+    left: 59px;
+    position: absolute;
+    top: 205px;
+}
+
+.combinePanel .imgBlock{
+	position:absolute;
+	top:85px;
+	right:0;
+	width: 67%;
+	display: -webkit-flex;
+	-webkit-flex-wrap: wrap;
+	-webkit-justify-content: space-between;
+	display: -ms-flexbox;
+	-ms-flex-direction:row;
+    -ms-flex-wrap: wrap;
+	-ms-flex-pack:justify;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.combinePanel .imgBlock ul{
+	width: 100%;
+}
+.combinePanel .imgBlock ul li{
+	width: 161px;
+	height: 160px;
+	display: inline-block;
+}
+.combinePanel .imgBlock ul li a{
+	display: block;
+}
+
+.bottomSpace{
+	height: 80px;
+}
+
+@media only screen and (max-width: 960px) {
+	.subViewBlock{
+		margin-top: 30px;
+	}
+	.subViewBlock li {
+		height: auto;
+	}
+	.subViewBlock li .shadow {
+		display: none;
+	}
+	.subViewBlock li .imgBlock{
+	 	position: static;
+	 	text-align: center;
+	}
+	.subViewBlock li .imgBlock img{
+		display: inline-block;
+		width: 100%;
+		max-width: 547px;
+	}
+	.subViewBlock li:last-child .imgBlock img{
+		max-width: 580px;
+	}
+	.subViewBlock li .textBlock {
+		width: 100%;
+		height: auto;
+		position: static;	
+		text-align: center;
+	}
+	.subViewBlock li .textBlock h3 {
+		margin-top: 30px;
+	}
+	.subViewBlock li .textBlock p {
+		text-align: center;
+		padding: 0 20px;
+	}
+	.subViewBlock li .buyBtn {
+		position: static;
+		display: inline-block;
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 990px) {	
+	.combinePanel {
+		margin-top: 20px;
+	}
+	.combinePanel .buyBtn {
+		 left: 99px;
+	}
+	.combinePanel .textBlock {
+		left: 40px;
+	}
+	.combinePanel .imgBlock {
+		width: 360px;
+		top: 20px;
+		right: 40px;
+	}
+	.combinePanel .imgBlock ul li{
+		margin-bottom: 20px;
+		border: 1px solid #f3f3f3;
+	}
+	
+}
+
+@media only screen and (max-width: 790px) {	
+	.combinePanel .imgBlock{
+		position: static;
+		width: auto;
+	}
+	.combinePanel{
+		text-align: center;
+		height: auto;
+		padding-bottom: 20px;
+	}
+	
+	.combinePanel .textBlock {
+		position: static;
+		width:auto;
+		
+	}
+	.combinePanel .textBlock p {
+		margin: 20px 0;
+		padding: 0 20px;
+	}
+	
+	.combinePanel .buyBtn {
+		position: static;
+		display: inline-block;
+	}
+}

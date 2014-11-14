@@ -118,17 +118,16 @@ var EBE_NormalMenuModule  = function(el,index){
 		mainMenuLiEls.eq(tIndex).addClass("over");
 		for( i=0;i<subMenus.length;i++ ){
 			sub = subMenus[i];
-			if(sub){
-				if( i == tIndex){
-					sub.show();
-					subBlockEl.show();
-					popBlockEl.width(menuWidth*2);
-				}else{
-					sub.hide();
-					subBlockEl.hide();
-					popBlockEl.width(menuWidth);
-				}
-			}
+			if(!sub){continue;}
+			 sub.hide();
+			 subBlockEl.hide();
+			 popBlockEl.width(menuWidth);	
+		}
+		sub = subMenus[tIndex];
+	    if( sub ){
+			sub.show();
+			subBlockEl.show();
+			popBlockEl.width(menuWidth*2);
 		}
 	});
 	el.mouseleave(function(){
